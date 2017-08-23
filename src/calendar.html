@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lịch làm việc</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+  <header class="box-header">
+    <div class="container">
+      <h1 class="logo">
+        <a class="link-logo" href="./home.html">
+          <img class="img-logo" src="assets/images/logo/Logo.png" />
+        </a>
+      </h1>
+      <div class="text-logo">
+        <span class="text-title-logo">UBND QUẬN THANH KHÊ<span>
+      </div>
+    </div>
+  </header>
+
+  <main class="box-main">
+    <div class="container">
+      <div class="header">
+        <h2 class="title bg-calendar">
+          <span class="title-main">Lịch Làm Việc Quận Thanh Khê</span>
+        </h2>
+        <div class="title-right">
+          <p class="title-main-right">LỊCH CÔNG TÁC CƠ QUAN TUẦN THỨ 27</p>
+          <p class="title-main-right-date">(TỪ NGÀY 03/07/2017 ĐẾN NGÀY 08/07/2017)</p>
+        </div>
+      </div>
+
+      <!-- <div class="content calendar-page-custom">
+        <div class="procedure-page">
+          <div class="header-procedure">
+            <span class="icon-arrow1 icon-arrow1-bottom"></span>
+            <span class="center-icon"></span>
+            <span class="icon-arrow1 icon-arrow1-top"></span>
+            <div class="page-document">
+              <span class="text-page">TRANG</span>
+              <input type="text" value="03" /> /05
+            </div>
+            <div class="box-icon-zoom">
+              <span class="icon-zoom-out"></span>
+              <span class="center-icon"></span>
+              <span class="icon-zoom-in"></span>
+            </div>
+            <div class="box-icon-zoom-full">
+              <span class="icon-zoom-full"></span>
+            </div>
+          </div>
+          <div class="scroll-pdf">
+            <div class="content-procedure">
+              <div class="paper">
+                <img src="assets/images/paper/paper.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="content custom-procedure">
+        <div class="view-procedure">
+          <iframe class="view-pdf" src="../lib-pdf/web/viewer.html?file=file.pdf" seamless></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer footer-pdf">
+    <div class="container">
+      <button class="btn-icon home btn-action-back" id="btn-back-home"><i class="icon icon-home"></i><span class="space-home">Trang chủ</span></button>
+      <div id="box-modal" class="modal popup">
+        <div class="modal-back-home">
+          <img class="btn-close-modal close-modal" src="assets/images/icon/close.png">
+          <h3 class="notification">
+            Bạn có muốn rời khỏi trang này
+          </h3>
+          <div class="button-notification">
+            <button class="btn message-no btn-action-cancel btn-cancel">Không</button>
+            <button class="btn message-yes btn-action-back" onclick="window.location.href='./home.html'">Có</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/modal.js"></script>
+</body>
+
+</html>

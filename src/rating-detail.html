@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Đánh Giá Chi Tiết</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+  <header class="box-header">
+    <div class="container">
+      <h1 class="logo">
+        <a class="link-logo" href="#">
+          <img class="img-logo" src="assets/images/logo/Logo.png" />
+        </a>
+      </h1>
+      <div class="text-logo">
+        <span class="text-title-logo">UBND QUẬN THANH KHÊ<span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="header">
+        <h2 class="title bg-rate">
+          <span class="title-main">Đánh Giá Công Chức Tiếp Nhận</span>
+        </h2>
+      </div>
+      <div class="content">
+        <div class="box-content">
+          <div class="box-info">
+            <div class="info-top bg-img-rating">
+            </div>
+            <div class="info-bottom">
+              <h2 class="header-info">Phạm Đình Minh Hải</h2>
+              <span class="center-info"></span>
+              <p><span class="bold">Ngày sinh:</span> 08/03/1983</p>
+              <p><span class="bold">Trình độ học vấn:</span> Đại học</p>
+              <p><span class="bold">Chức vụ:</span> Chánh văn phòng</p>
+            </div>
+          </div>
+          <div class="box-input">
+            <div class="title-form">
+              <span class="text-title">ĐÁNH GIÁ MỨC ĐỘ HÀI LÒNG CỦA TỪNG CÁ NHÂN</span>
+            </div>
+            <form class="form-fb">
+              <div class="sub-box-input">
+                <div class="title-input">
+                  <label class="label-input">
+                    <span class="phone-fb">Số điện thoại của bạn<span>
+                  </label>
+                </div>
+                <div class="input-fb">
+                  <input type="text" placeholder="Nhập số" />
+                </div>
+              </div>
+
+              <div class="sub-box-input">
+                <p>
+                  <span class="bold">Mức độ hài lòng đối với công chức tại Bộ phận tiếp nhận và trả kết quả:</span>
+                </p>
+                <ul>
+                  <li class="radio-rating">
+                    <input type="radio" name="review" id="agree" checked="true" />
+                    <label for="agree" class="label-radio-agree">
+                      <span></span>
+                      <p class="detail-rw">Hài lòng</p>
+                    </label>
+
+                    <input type="radio" name="review" id="disagree" />
+                    <label for="disagree" class="label-radio-disagree">
+                    <span></span>
+                    <p class="detail-rw">Chưa hài lòng</p>
+                    </label>
+                  </li>
+                </ul>
+                <button class="btn-send-rating">Gửi Đánh Giá</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <button class="btn-icon home btn-action-back" id="btn-back-home"><i class="icon icon-home"></i><span class="space-home">Trang chủ</span></button>
+      <button class="btn-icon back btn-action-send"><i class="icon icon-arrow-left size-back btn-action-send"></i><span class="space-back" onclick="window.location.href='./rating-list.html'">Trở về</span></button>
+      <div id="box-modal" class="modal popup">
+        <div class="modal-back-home">
+          <img class="btn-close-modal close-modal" src="assets/images/icon/close.png">
+          <h3 class="notification">
+            Bạn có muốn rời khỏi trang này
+          </h3>
+          <div class="button-notification">
+            <button class="btn message-no btn-action-cancel btn-cancel">Không</button>
+            <button class="btn message-yes btn-action-back" onclick="window.location.href='./home.html'">Có</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/modal.js"></script>
+</body>
+
+</html>

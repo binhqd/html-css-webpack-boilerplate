@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tra Cứu Hồ Sơ</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+  <header class="box-header">
+    <div class="container">
+      <h1 class="logo">
+        <a class="link-logo" href="./home.html">
+          <img class="img-logo" src="assets/images/logo/Logo.png" />
+        </a>
+      </h1>
+      <div class="text-logo">
+        <span class="text-title-logo">UBND QUẬN THANH KHÊ<span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="content box-search-file">
+        <h2 class="title-search-file">
+          Tra cứu hồ sơ
+        </h2>
+        <form class="form-search-file" method="get" action="./search-detail.html">
+          <div class="box-search-content">
+            <input class="inp-search-file" type="text" placeholder="Nhập số biên nhận vào đây"/>
+            <button class="btn-search-file icon-zoom btn-action-back">
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <button class="btn-icon home btn-action-back" id="btn-back-home"><i class="icon icon-home"></i><span class="space-home">Trang chủ</span></button>
+      <div id="box-modal" class="modal popup">
+        <div class="modal-back-home">
+          <img class="btn-close-modal close-modal" src="assets/images/icon/close.png">
+          <h3 class="notification">
+              Bạn có muốn rời khỏi trang này
+          </h3>
+          <div class="button-notification">
+            <button class="btn message-no btn-action-cancel btn-cancel">Không</button>
+            <button class="btn message-yes btn-action-back" onclick="window.location.href='./home.html'">Có</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/modal.js"></script>
+</body>
+
+</html>
