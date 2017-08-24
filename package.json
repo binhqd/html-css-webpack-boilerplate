@@ -38,6 +38,8 @@
     "bluebird": "^3.5.0",
     "copy-webpack-plugin": "^4.0.1",
     "ejs": "^2.5.7",
+    "eslint": "^4.5.0",
+    "eslint-loader": "^1.9.0",
     "extract-loader": "^1.0.1",
     "html-loader": "^0.5.1",
     "image-webpack-loader": "^3.3.1"

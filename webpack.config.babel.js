@@ -23,7 +23,8 @@ var _module = {
         }, {
             loader: "html-loader",
             options: {
-              attrs: ['img:src', 'link:href', 'script:src']
+              attrs: ['img:src', 'link:href', 'script:src'],
+              interpolate: true
             }
         }
       ]
@@ -61,19 +62,26 @@ var _module = {
       }
     }, {
       test: /\.(css)$/,
-        use: [{
-            loader: "file-loader",
-            options: {
-              name: 'css/[hash].[name].[ext]'
-            }
-        },
-        {
-            loader: "extract-loader",
-        },
-        {
-            loader: "css-loader",
-        }]
-    }, {
+      use: [{
+        loader: "file-loader",
+        options: {
+          name: 'css/[hash].[name].[ext]'
+        }
+      },
+      {
+        loader: "extract-loader",
+      },
+      {
+        loader: "css-loader",
+      }]
+    },
+    // {
+    //   enforce: "pre",
+    //   test: /\.js$/,
+    //   exclude: /node_modules/,
+    //   loader: "eslint-loader"
+    // },
+    {
       test: /\.(js|jsx)$/,
       exclude: /(node_modules)/,
       use: [
@@ -89,7 +97,6 @@ var _module = {
           presets: ['es2015', 'react', 'babel-preset-stage-3']
         }
       }],
-
     }
   ],
 
@@ -105,6 +112,7 @@ var resolve = {
   alias: {
     'base': path.resolve(__dirname, './src/'),
     'assets': path.resolve(__dirname, './src/assets/'),
+    'images': path.resolve(__dirname, './src/assets/images/'),
     'build': path.resolve(__dirname, './build')
   }
 };
@@ -211,7 +219,7 @@ module.exports = function (env) {
           './src/rating-detail.html',
           './src/rating-list.html',
           './src/search-detail.html',
-          './src/search-file.html',
+          './src/search-file.html'
         ],
       },
       output: {
@@ -222,7 +230,8 @@ module.exports = function (env) {
       module: _module,
       plugins: plugins.concat(
         // new HtmlWebpackPlugin({
-        //   template: path.resolve('./src/', 'index.html'),
+        //   filename: 'home.html',
+        //   template:'./src/home.html',
         //   // favicon: path.resolve('./src/', 'assets/images/favicon.ico'),
         //   minify: {
         //     collapseWhitespace: true
